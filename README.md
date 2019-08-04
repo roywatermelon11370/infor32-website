@@ -1,3 +1,3 @@
 # infor32-website
 
-the photo called "cake.png" 
+建中資訊社32屆社網
