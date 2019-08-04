@@ -1,0 +1,153 @@
+/* @import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500&display=swap); */
+
+* {
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+body {
+    margin: 0%;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+
+/* =========================================
+=                   navbar                 =
+============================================*/
+.navbar {
+    background: black;
+}
+
+
+/* ==================================
+=               header              =
+=====================================*/
+#header {
+    background-image: url('../image/people.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#header>.container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+}
+
+#header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.title:before {
+    content: "< ";
+    color:#10BC10;
+}
+
+.title:after {
+    content: " >";
+    color: #10BC10;
+}
+
+/*=============================== 
+=            社團介紹            =
+==================================*/
+.iconorder {
+    display: flex;
+    justify-content: center;
+}
+
+.introicon {
+    font-size: 30px;
+    background: #1E8AD3;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    margin: 30px;
+    display: inline-block;
+    cursor: default;
+}
+
+/* ================================
+=              活動                =
+==================================== */
+#activity {
+    background: #6f42c1;
+}
+
+.tile1 {
+    background-image: url('../image/summercamp.JPG');
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+
+.tile2 {
+    background-image: url('../image/new.jpg');
+    background-size: cover;
+    height: 350px;
+    position: relative;
+}
+
+.text-tile {
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin-top: 150px;
+}
+
+.tile1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.tile2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* =============================
+=           footer             =
+================================ */
+
+#footer {
+    background: black;
+}
