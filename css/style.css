@@ -116,7 +116,7 @@ a:hover {
     margin: 10px;
     width: 375px;
     /* width: 100%; */
-    box-shadow: 5px 5px 0px #263238;
+    box-shadow: 7px 7px 0px #263238;
     display: inline-block;
     position: relative;
 }
