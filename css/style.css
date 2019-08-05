@@ -1,0 +1,231 @@
+/* @import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500&display=swap); */
+
+* {
+    font-family: 'Microsoft JhengHei', sans-serif;
+}
+
+body {
+    margin: 0%;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+}
+
+.card-order {
+    /* 排序網頁裡的卡片並不讓它們的寬度改變(用row會改變寬度) */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* =========================================
+=                   navbar                 =
+============================================*/
+.navbar {
+    background: black;
+}
+
+
+/* ==================================
+=               header              =
+=====================================*/
+#header {
+    background-image: url('../image/people.jpg');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#header>.container {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+}
+
+#header:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.title:before {
+    content: "< ";
+    color:#00c853;
+}
+
+.title:after {
+    content: " >";
+    color: #00c853;
+}
+
+/*=============================== 
+=            社團介紹            =
+==================================*/
+
+
+.iconorder {
+    /* 排序圖示，不會換行 */
+    display: flex;
+    justify-content: center;
+}
+
+.iconorder .icon {
+    font-size: 30px;
+    background: #1E8AD3;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 20px;
+    width: 70px;
+    height: 70px;
+    margin: 20px;
+    display: inline-block;
+    cursor: default;
+}
+
+/* ==================================
+=                 課程              =
+===================================== */
+.lesson-card {
+    background: #455a64;
+    height: 150px;
+    margin: 10px;
+    width: 375px;
+    /* width: 100%; */
+    box-shadow: 5px 5px 0px #263238;
+    display: inline-block;
+    position: relative;
+}
+
+.lesson-card .icon {
+    font-size: 50px;
+    line-height: 100px;
+    position: absolute;
+    color: white;
+    background: #00c853;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+}
+
+.lesson-card>h4 {
+    position: absolute;
+    top: 20px;
+    left: 125px;
+}
+
+.lesson-card>p {
+    position: absolute;
+    top: 65px;
+    left: 125px;
+}
+
+.lesson-card>a {
+    color: #00c853;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+/* ================================
+=              活動                =
+==================================== */
+#activity {
+    background: #6f42c1;
+}
+
+.tile1 {
+    background-image: url('../image/summercamp.JPG');
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    display: block;
+}
+
+.tile2 {
+    background-image: url('../image/new.jpg');
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    display: block;
+}
+
+.text-tile {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    bottom: 15px;
+}
+
+.tile1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.tile2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* =============================
+=           footer             =
+================================ */
+
+#footer {
+    background: black;
+}
+
+.footer-icon {
+    color: #606060;
+    transition: all .3s ease-in-out;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.footer-icon:hover {
+    color: #aaaaaa;
+    transition: all .3s ease-in-out;
+}
