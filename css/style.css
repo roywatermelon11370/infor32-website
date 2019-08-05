@@ -182,6 +182,7 @@ a:hover {
     z-index: 2;
     color: white;
     bottom: 15px;
+    width: 95%;
 }
 
 .tile1:after {
