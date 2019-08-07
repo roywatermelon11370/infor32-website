@@ -31,9 +31,7 @@ a:hover {
 /* =========================================
 =                   navbar                 =
 ============================================*/
-.navbar {
-    background: black;
-}
+
 
 
 /* ==================================
@@ -96,7 +94,7 @@ a:hover {
 
 .iconorder .icon {
     font-size: 30px;
-    background: #1E8AD3;
+    background: #03a9f4;
     border-radius: 100%;
     overflow: hidden;
     line-height: 70px;
@@ -110,6 +108,8 @@ a:hover {
 /* ==================================
 =                 課程              =
 ===================================== */
+/* #lesson {} */
+
 .lesson-card {
     background: #455a64;
     height: 150px;
@@ -162,6 +162,7 @@ a:hover {
 }
 
 .tile1 {
+    /* 第一個圖片(暑訓) */
     background-image: url('../image/summercamp.JPG');
     background-size: cover;
     height: 350px;
@@ -170,6 +171,7 @@ a:hover {
 }
 
 .tile2 {
+    /* 第二個圖片(迎新) */
     background-image: url('../image/new.jpg');
     background-size: cover;
     height: 350px;
@@ -178,6 +180,7 @@ a:hover {
 }
 
 .text-tile {
+    /* 圖片上的字 */
     position: absolute;
     z-index: 2;
     color: white;
@@ -186,6 +189,7 @@ a:hover {
 }
 
 .tile1:after {
+    /* 圖片1的半透明遮罩 */
     content: "";
     display: block;
     position: absolute;
@@ -199,6 +203,7 @@ a:hover {
 }
 
 .tile2:after {
+    /* 圖片2的半透明遮罩 */
     content: "";
     display: block;
     position: absolute;
@@ -214,11 +219,6 @@ a:hover {
 /* =============================
 =           footer             =
 ================================ */
-
-#footer {
-    background: black;
-}
-
 .footer-icon {
     color: #606060;
     transition: all .3s ease-in-out;
