@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>infor 32nd</title>
     <!-- 使用bootstrap 4 -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <!-- 使用font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- 使用style.css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- 使用main.js -->
+    <script src="../assets/js/main.js"></script>
     <!-- 連結Bootstrap所需要的js -->
     <!-- jquery.min.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -60,7 +62,7 @@
     </header>
 
     <!-- 社團介紹 -->
-    <div id="introduce" class="py-5 px-5 bg-primary text-center text-white">
+    <div id="introduce" class="py-5 bg-primary text-center text-white">
         <!-- big icons -->
         <div class="iconorder">
             <div>
@@ -76,15 +78,37 @@
 
         <!-- 介紹 -->
         <h3>社團特色</h3>
-        <p>由一群在資訊時代中探索科技領域、領導尖端知識的建中生相互合作、共同集結而成的大型社團。</p>
+        <p class="px-5">由一群在資訊時代中探索科技領域、領導尖端知識的建中生相互合作、共同集結而成的大型社團。</p>
 
         <!-- 卡片 -->
-
+        <div class="card-order text-left">
+            <div class="intro-card">
+                <img src="https://picsum.photos/id/102/600/400" alt="學術">
+                <div class="intro-card-text">
+                    <h5>學術交流</h5>
+                    <p>建中資訊社為本校最大的社團之一，因而聚集了各種領域的專才。在專案小組或是研討會中，互相分享每個人的知識與想法，促使我們能製造出創新的成果。</p>
+                </div>
+            </div>
+            <div class="intro-card">
+                <img src="https://picsum.photos/id/15/600/400" alt="學術">
+                <div class="intro-card-text">
+                    <h5>社團活動</h5>
+                    <p>建中資訊社為本校最大的社團之一，因而聚集了各種領域的專才。在專案小組或是研討會中，互相分享每個人的知識與想法，促使我們能製造出創新的成果。</p>
+                </div>
+            </div>
+            <div class="intro-card">
+                <img src="https://picsum.photos/id/125/600/400" alt="學術">
+                <div class="intro-card-text">
+                    <h5>未來領航</h5>
+                    <p>建中資訊社在全台灣至全世界佈下資訊科技的人才，我們不只侷限於僅僅一個高中的社團，更放眼至全世界最頂尖的資訊社群。</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 
     <!-- 課程介紹 -->
-    <div id="lesson" class="py-5 bg-secondary text-center text-white">
+    <div id="lesson" class="py-5 bg-dark text-center text-white">
         <!-- 介紹 -->
         <h3>課程</h3>
         <p class="px-5">每天放學時間在電教二所提供的免費課程，歡迎所有有興趣的同學來參加!</p>
@@ -92,40 +116,40 @@
         <!-- cards -->
         <div class="card-order text-left">
             <div class="lesson-card">
-                <i class="fas fa-globe icon text-center"></i>
-                <h4>Web Development</h4>
+                <i class="fas fa-globe icon text-center text-info"></i>
+                <h5>Web</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="">了解更多</a>
+                <a href="" class="text-info">了解更多</a>
             </div>
             <div class="lesson-card">
-                <i class="fab fa-python icon text-center"></i>
-                <h4>Python</h4>
+                <i class="fab fa-python icon text-center text-warning"></i>
+                <h5>Python</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="">了解更多</a>
+                <a href="" class="text-warning">了解更多</a>
             </div>
             <div class="lesson-card">
-                <i class="fas fa-code icon text-center"></i>
-                <h4>C++</h4>
+                <i class="fas fa-code icon text-center text-danger"></i>
+                <h5>C++</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="">了解更多</a>
+                <a href="" class="text-danger">了解更多</a>
             </div>
             <div class="lesson-card">
-                <i class="fas fa-calculator icon text-center"></i>
-                <h4>Machine Learning</h4>
+                <i class="fas fa-calculator icon text-center text-warning"></i>
+                <h5>Machine Learning</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="">了解更多</a>
+                <a href="" class="text-warning">了解更多</a>
             </div>
             <div class="lesson-card">
-                <i class="fas fa-globe icon text-center"></i>
-                <h4>Web Development</h4>
+                <i class="fas fa-globe icon text-center text-danger"></i>
+                <h5>Web</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="">了解更多</a>
+                <a href="" class="text-danger">了解更多</a>
             </div>
             <div class="lesson-card">
-                <i class="fas fa-flag icon text-center"></i>
-                <h4>四校聯課</h4>
+                <i class="fas fa-flag icon text-center text-info"></i>
+                <h5>四校聯課</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="">了解更多</a>
+                <a href="" class="text-info">了解更多</a>
             </div>
 
         </div>
