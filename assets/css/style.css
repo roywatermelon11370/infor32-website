@@ -1,4 +1,4 @@
-/* @import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500&display=swap); */
+
 
 * {
     font-family: 'Microsoft JhengHei', sans-serif;
@@ -13,7 +13,7 @@ h1, h2, h3 {
     letter-spacing: 10px;
 }
 
-h4 {
+h4, h5 {
     font-weight: bold;
 }
 
@@ -43,6 +43,7 @@ a:hover {
     height: 100vh;
     position: relative;
     background-attachment: fixed;
+    background-position: center;
 }
 
 #header>.container {
@@ -94,7 +95,7 @@ a:hover {
 
 .iconorder .icon {
     font-size: 30px;
-    background: #03a9f4;
+    background: #2980b9;
     border-radius: 100%;
     overflow: hidden;
     line-height: 70px;
@@ -105,35 +106,68 @@ a:hover {
     cursor: default;
 }
 
+.intro-card {
+    width: 375px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.intro-card> img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.intro-card-text {
+    position: relative;
+    color: #34495e;
+    top: 250px;
+}
 /* ==================================
 =                 課程              =
 ===================================== */
-/* #lesson {} */
+
 
 .lesson-card {
-    background: #455a64;
+    background: #34495e;
     height: 150px;
     margin: 10px;
     width: 375px;
-    /* width: 100%; */
-    box-shadow: 7px 7px 0px #263238;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
     display: inline-block;
     position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.lesson-card:hover {
+    background: #44596e;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
 }
 
 .lesson-card .icon {
     font-size: 50px;
     line-height: 100px;
     position: absolute;
-    color: white;
-    background: #00c853;
     width: 100px;
     height: 100px;
     top: 0px;
     left: 0px;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
-.lesson-card>h4 {
+.lesson-card>h5 {
     position: absolute;
     top: 20px;
     left: 125px;
@@ -141,12 +175,11 @@ a:hover {
 
 .lesson-card>p {
     position: absolute;
-    top: 65px;
+    top: 55px;
     left: 125px;
 }
 
 .lesson-card>a {
-    color: #00c853;
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -158,7 +191,7 @@ a:hover {
 =              活動                =
 ==================================== */
 #activity {
-    background: #6f42c1;
+    background: #8e44ad;
 }
 
 .tile1 {
@@ -174,6 +207,7 @@ a:hover {
     /* 第二個圖片(迎新) */
     background-image: url('../image/new.jpg');
     background-size: cover;
+    justify-content: center;
     height: 350px;
     position: relative;
     display: block;
