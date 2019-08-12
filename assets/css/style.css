@@ -117,6 +117,12 @@ a:hover {
     border-radius: 2px;
     overflow: hidden;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+}
+
+.intro-card:hover {
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
 }
 
 .intro-card> img {
@@ -138,7 +144,7 @@ a:hover {
 
 .lesson-card {
     background: #34495e;
-    height: 150px;
+    height: 165px;
     margin: 10px;
     width: 375px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
@@ -150,7 +156,6 @@ a:hover {
 }
 
 .lesson-card:hover {
-    background: #44596e;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease-in-out;
 }
@@ -179,12 +184,31 @@ a:hover {
     left: 125px;
 }
 
-.lesson-card>a {
+.simple-button {
+    /* 課程卡片上的按鈕 */
     position: absolute;
     bottom: 10px;
     right: 10px;
     font-weight: bold;
     letter-spacing: 5px;
+    background: transparent;
+    border: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.simple-button:hover {
+    /* 課程卡片上的按鈕 */
+    background: #44596e;
+    color: #ffffff;
+}
+
+.simple-button:focus {
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
 }
 
 /* ================================
@@ -198,19 +222,24 @@ a:hover {
     /* 第一個圖片(暑訓) */
     background-image: url('../image/summercamp.JPG');
     background-size: cover;
-    height: 350px;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
     position: relative;
     display: block;
+    overflow: hidden;
 }
 
 .tile2 {
     /* 第二個圖片(迎新) */
     background-image: url('../image/new.jpg');
     background-size: cover;
-    justify-content: center;
-    height: 350px;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
     position: relative;
     display: block;
+    overflow: hidden;
 }
 
 .text-tile {
@@ -218,26 +247,12 @@ a:hover {
     position: absolute;
     z-index: 2;
     color: white;
-    bottom: 15px;
-    width: 95%;
-}
-
-.tile1:after {
-    /* 圖片1的半透明遮罩 */
-    content: "";
-    display: block;
-    position: absolute;
-    top:0px;
-    left:0px;
+    bottom: 40px;
     width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 0.5;
-    z-index: 1;
 }
 
-.tile2:after {
-    /* 圖片2的半透明遮罩 */
+[class^='tile']:after {
+    /* 圖片的半透明遮罩 */
     content: "";
     display: block;
     position: absolute;
@@ -254,13 +269,34 @@ a:hover {
 =           footer             =
 ================================ */
 .footer-icon {
-    color: #606060;
+    color: rgba(255, 255, 255, 0.4);
     transition: all .3s ease-in-out;
     font-size: 30px;
     padding: 15px;
 }
 
 .footer-icon:hover {
-    color: #aaaaaa;
+    color: #ffffff;
     transition: all .3s ease-in-out;
+}
+
+
+
+
+
+/* mediaquery 576px以下啟用(手機) */
+@media (max-width: 576px) {
+    /* header */
+    #header {
+        height: 500px;
+    }
+
+    /* 活動 */
+    .tile1 {
+        height: 400px;
+    }
+
+    .tile2 {
+        height: 400px;
+    }
 }
