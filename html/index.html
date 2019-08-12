@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>infor 32nd</title>
+    <title>INFOR 32nd</title>
     <!-- 使用bootstrap 4 -->
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <!-- 使用font awesome -->
@@ -111,79 +111,198 @@
     <div id="lesson" class="py-5 bg-dark text-center text-white">
         <!-- 介紹 -->
         <h3>課程</h3>
-        <p class="px-5">每天放學時間在電教二所提供的免費課程，歡迎所有有興趣的同學來參加!</p>
+        <p class="px-5">每天放學時間在電教二所提供的免費課程，歡迎所有有興趣的同學來參加!</p><br>
 
         <!-- cards -->
+
+        <!-- lesson 1 -->
         <div class="card-order text-left">
             <div class="lesson-card">
                 <i class="fas fa-globe icon text-center text-info"></i>
                 <h5>Web</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="" class="text-info">了解更多</a>
+                <button type="button" class="btn btn-outline-info simple-button" data-toggle="modal" data-target="#lesson1">了解更多</button>
+
+                <!-- modal -->
+                <div class="modal fade" id="lesson1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Web</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://picsum.photos/id/598/600/300" class="modal-img">
+                            <p class="text-dark pt-3">Description.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-light" data-dismiss="modal">關 閉</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
+
+            <!-- lesson 2 -->
             <div class="lesson-card">
                 <i class="fab fa-python icon text-center text-warning"></i>
                 <h5>Python</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="" class="text-warning">了解更多</a>
+                <button type="button" class="btn btn-outline-warning simple-button" data-toggle="modal" data-target="#lesson2">了解更多</button>
+
+                <!-- modal -->
+                <div class="modal fade" id="lesson2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Python</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://picsum.photos/id/568/600/300" class="modal-img">
+                            <p class="text-dark pt-3">Description.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-light" data-dismiss="modal">關 閉</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
+
+            <!-- lesson 3 -->
             <div class="lesson-card">
                 <i class="fas fa-code icon text-center text-danger"></i>
                 <h5>C++</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="" class="text-danger">了解更多</a>
+                <button type="button" class="btn btn-outline-danger simple-button" data-toggle="modal" data-target="#lesson3">了解更多</button>
+                <!-- modal -->
+                <div class="modal fade" id="lesson3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalCenterTitle">C++</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://picsum.photos/id/98/600/300" class="modal-img">
+                            <p class="text-dark pt-3">Description.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-light" data-dismiss="modal">關 閉</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
+
+            <!-- lesson 4 -->
             <div class="lesson-card">
                 <i class="fas fa-calculator icon text-center text-warning"></i>
                 <h5>Machine Learning</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="" class="text-warning">了解更多</a>
+                <button type="button" class="btn btn-outline-warning simple-button" data-toggle="modal" data-target="#lesson4">了解更多</button>
+                <!-- modal -->
+                <div class="modal fade" id="lesson4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Machine learning</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://picsum.photos/id/59/600/300" class="modal-img">
+                            <p class="text-dark pt-3">Description.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-light" data-dismiss="modal">關 閉</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
+
+            <!-- lesson 5 -->
             <div class="lesson-card">
-                <i class="fas fa-globe icon text-center text-danger"></i>
-                <h5>Web</h5>
+                <i class="fas fa-save icon text-center text-danger"></i>
+                <h5>計概</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="" class="text-danger">了解更多</a>
+                <button type="button" class="btn btn-outline-danger simple-button" data-toggle="modal" data-target="#lesson5">了解更多</button>
+                <!-- modal -->
+                <div class="modal fade" id="lesson5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalCenterTitle">計概</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://picsum.photos/id/518/600/300" class="modal-img">
+                            <p class="text-dark pt-3">Description.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-light" data-dismiss="modal">關 閉</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
+
+            <!-- lesson 6 -->
             <div class="lesson-card">
                 <i class="fas fa-flag icon text-center text-info"></i>
                 <h5>四校聯課</h5>
                 <p>上課時間: 每週五下午5:00</p>
-                <a href="" class="text-info">了解更多</a>
+                <button type="button" class="btn btn-outline-info simple-button" data-toggle="modal" data-target="#lesson6">了解更多</button>
+
+                <!-- modal -->
+                <div class="modal fade" id="lesson6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalCenterTitle">四校聯課</h5>
+                        </div>
+                        <div class="modal-body">
+                            <img src="https://picsum.photos/id/599/600/300" class="modal-img">
+                            <p class="text-dark pt-3">Description.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-light" data-dismiss="modal">關 閉</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
         </div>
     </div>
 
     <!-- 活動 -->
-    <div id="activity" class="pt-5 px-3 text-center text-white">
+    <div id="activity" class="pt-5 text-center text-white">
         <!-- 介紹 -->
         <h3>各式活動</h3>
-        <p>不只是待在電腦前當個碼農，也有多采多姿的活動!</p><br>
+        <p class="px-5">誰說工程師都宅男？我們有密切合作的友社及多元的社團活動！</p><br>
         <!-- tiles -->
-        <div class="row">
-            <div class="col-sm-12 col-md-6 text-center tile1">
-                <div class="text-tile text-center">
-                    <h3>暑訓<br>
-                        <良成楓景遇建你>
-                    </h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non rem, inventore error accusantium
-                        quasi consequuntur totam magni nobis voluptas pariatur ullam illo enim dignissimos voluptatibus
-                        nihil harum eius commodi quas!</p>
-                    <a href="https://izccsummercamp.infor.org" class="btn btn-outline-light">了解更多</a>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 text-center tile2">
-                <div class="text-tile text-center">
-                    <h3>迎新</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores temporibus quis delectus
-                        cumque est, veniam quos a laborum laboriosam nihil at eos et maxime officiis soluta harum
-                        perferendis in illum sequi esse? Iure, necessitatibus delectus? Cupiditate fugiat quasi
-                        reiciendis quod?</p>
-                    <a href="#" class="btn btn-outline-light">了解更多</a>
-                </div>
+        <div class="tile1">
+            <div class="text-tile text-center px-5">
+                <h3>暑訓<br>
+                    <良成楓景遇建你>
+                </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non rem, inventore error accusantium
+                    quasi consequuntur totam magni nobis voluptas pariatur ullam illo enim dignissimos voluptatibus
+                    nihil harum eius commodi quas!</p>
+                <a href="https://izccsummercamp.infor.org" class="btn btn-outline-light">了 解 更 多</a>
             </div>
         </div>
+
+        <div class="tile2">
+            <div class="text-tile text-center px-5">
+                <h3>迎新</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores temporibus quis delectus
+                    cumque est, veniam quos a laborum laboriosam nihil at eos et maxime officiis soluta harum
+                    perferendis in illum sequi esse? Iure, necessitatibus delectus? Cupiditate fugiat quasi
+                    reiciendis quod?</p>
+                <a href="#" class="btn btn-outline-light">了 解 更 多</a>
+            </div>
+        </div>
+
+
+
     </div>
 
     <!-- footer -->
