@@ -231,7 +231,7 @@ $grid-gutter-width:           30px !default;
 $line-height-lg:              1.5 !default;
 $line-height-sm:              1.5 !default;
 
-$border-width:                1.5px !default;
+$border-width:                1.7px !default;
 $border-color:                $gray-300 !default;
 
 $border-radius:               .2rem !default;
@@ -959,9 +959,9 @@ $modal-lg:                          800px !default;
 $modal-md:                          500px !default;
 $modal-sm:                          300px !default;
 
-$modal-fade-transform:              translate(0, -50px) !default;
+$modal-fade-transform:              translate(0, 50px) !default;
 $modal-show-transform:              none !default;
-$modal-transition:                  transform .3s ease-out !default;
+$modal-transition:                  transform .3s ease-in-out !default;
 
 
 // Alerts
