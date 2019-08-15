@@ -62,7 +62,11 @@
     </header>
 
     <!-- 社團介紹 -->
-    <div id="introduce" class="py-5 bg-primary text-center text-white">
+    <div id="introduce" class="py-5 px-2 bg-primary text-center text-white">
+        <!-- 介紹 -->
+        <h3>社團特色</h3>
+        <p>由一群在資訊時代中探索科技領域、領導尖端知識的建中生相互合作、共同集結而成的大型社團。</p>
+
         <!-- big icons -->
         <div class="iconorder">
             <div>
@@ -72,56 +76,42 @@
                 <i class="fas fa-globe-americas icon text-center"></i>
             </div>
             <div>
-                <i class="fas fa-server icon text-center"></i>
+                <i class="fas fa-chart-line icon text-center"></i>
             </div>
         </div>
+    </div>
 
-        <!-- 介紹 -->
-        <h3>社團特色</h3>
-        <p class="px-5">由一群在資訊時代中探索科技領域、領導尖端知識的建中生相互合作、共同集結而成的大型社團。</p>
-
-        <!-- 卡片 -->
-        <div class="card-order text-left">
-            <div class="intro-card">
-                <img src="https://picsum.photos/id/102/600/400" alt="學術">
-                <div class="intro-card-text">
-                    <h5>學術交流</h5>
-                    <p>建中資訊社為本校的大社之一，因而聚集了各種資訊領域的專才。在社團課程及活動中，互相分享每個人的知識與想法，促使大家在各個方面皆有所涉獵，激盪出創新的成果。</p>
-                </div>
-            </div>
-            <div class="intro-card">
-                <img src="https://picsum.photos/id/15/600/400" alt="學術">
-                <div class="intro-card-text">
-                    <h5>社團活動</h5>
-                    <p>建中資訊社與全台近百個社團結為友社，並主要與楓資、景資、成電，四校一起主辦活動。除了常態的聯合社課以外，還有定期的暑訓、迎新、秋遊、寒訓和春遊等大型活動。藉由活動不僅聯繫社內及友社間感情，更讓大家知道資訊社是個活潑好動的社團（絕對不是油宅）！</p>
-                </div>
-            </div>
-            <div class="intro-card">
-                <img src="https://picsum.photos/id/125/600/400" alt="學術">
-                <div class="intro-card-text">
-                    <h5>未來領航</h5>
-                    <p>建中資訊社在全台灣至全世界佈下資訊科技的人才，我們不只侷限於僅僅一個高中的社團，更放眼至全世界最頂尖的資訊社群。</p>
-                </div>
-            </div>
-        </div>
-
+    <!-- 細部介紹 -->
+    <div id="intro-detail" class="py-5 px-5 bg-dark text-center text-white">
+      <div class="detail">
+        <img src="./../assets/image/teach.JPG" alt="">
+      </div>
+      <div class="detail">
+        <img src="./../assets/image/activity.JPG" alt="">
+      </div>
+      <div class="detail">
+        <img src="./../assets/image/future.jpg" alt="">
+      </div>
     </div>
 
     <!-- 社徽 -->
-    <div id="logo-section" class="py-5 px-3 bg-dark text-white text-center">
+    <div id="logo-section" class="py-5 px-2 bg-secondary text-white text-center">
       <h3>社徽</h3>
       <p>象徵社團的精神</p>
 
       <div class="card-order">
         <img src="./../assets/image/logo.jpg" alt="建中資訊社社徽" class="logo" >
-        <div class="logo-descrp bg-primary">  
-          
+        <div class="logo-descrp bg-primary text-left">  
+          <div class="logo-descrp-text-container">
+            <p class="logo-descrp-main">「圓滑應對資訊的洪流。」</p>
+            <p class="logo-descrp-author">- infor32nd社徽設計者 艾倫德</p>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- 課程介紹 -->
-    <div id="lesson" class="py-5 bg-dark text-center text-white">
+    <div id="lesson" class="py-5 px-2 bg-dark text-center text-white">
         <!-- 介紹 -->
         <h3>課程</h3>
         <p class="px-5">每天放學時間在電教二所提供的免費課程，歡迎所有有興趣的同學來參加!</p><br>
@@ -129,8 +119,8 @@
         <!-- cards -->
 
         <!-- lesson 1 -->
-        <div class="card-order text-left">
-            <div class="lesson-card">
+        <div class="card-order">
+            <div class="lesson-card text-left">
                 <i class="fas fa-globe icon text-center text-info"></i>
                 <div class="lesson-card-text">
                   <h5>Web</h5>
@@ -159,7 +149,7 @@
             </div>
 
             <!-- lesson 2 -->
-            <div class="lesson-card">
+            <div class="lesson-card text-left">
                 <i class="fab fa-python icon text-center text-warning"></i>
                 <div class="lesson-card-text">  
                   <h5>Python</h5>
@@ -188,7 +178,7 @@
             </div>
 
             <!-- lesson 3 -->
-            <div class="lesson-card">
+            <div class="lesson-card text-left">
                 <i class="fas fa-code icon text-center text-danger"></i>
                 <div class="lesson-card-text">
                   <h5>C++</h5>
@@ -216,7 +206,7 @@
             </div>
 
             <!-- lesson 4 -->
-            <div class="lesson-card">
+            <div class="lesson-card text-left">
                 <i class="fas fa-calculator icon text-center text-warning"></i>
                 <div class="lesson-card-text">
                   <h5>Machine Learning</h5>
@@ -244,7 +234,7 @@
             </div>
 
             <!-- lesson 5 -->
-            <div class="lesson-card">
+            <div class="lesson-card text-left">
                 <i class="fas fa-save icon text-center text-danger"></i>
                 <div class="lesson-card-text">
                   <h5>計概</h5>
@@ -272,7 +262,7 @@
             </div>
 
             <!-- lesson 6 -->
-            <div class="lesson-card">
+            <div class="lesson-card text-left">
                 <i class="fas fa-flag icon text-center text-info"></i>
                 <div class="lesson-card-text">
                   <h5>四校聯課</h5>
@@ -307,12 +297,12 @@
     <div id="activity" class="pt-5 text-center text-white bg-dark">
         <!-- 介紹 -->
         <h3>各式活動</h3>
-        <p class="px-5">誰說工程師都宅男？我們有密切合作的友社及多元的社團活動！</p><br>
+        <p class="px-2">誰說工程師都宅男？我們有密切合作的友社及多元的社團活動！</p><br>
         <!-- tiles -->
         <div class="tile1">
             <div class="text-tile text-center px-5">
                 <h3>暑訓<br>
-                    <良成楓景遇建你>
+                    良成楓景遇建你
                 </h3>
                 <p>由建國中學資訊社、成功高中電子計算機研習社、中山女高資訊研究社，以及景美女中電腦資訊社四個社團聯合舉辦。活動內容不僅包含精彩的實作課程，更涵蓋了精心備置的許多活動及企業參訪，希望能讓許多孩子在這升高中的暑假，享受一場美好的資訊饗宴。經由這次暑訓，同學將能對資訊科技有進一步的了解，亦可於資訊能力方面有所增長。</p>
                 <a href="https://izccsummercamp.infor.org" target="_blank" class="btn btn-outline-light">了 解 更 多</a>
