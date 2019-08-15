@@ -22,13 +22,6 @@ a:hover {
     border-bottom-color: transparent;
 }
 
-.card-order {
-    /* 排序網頁裡的卡片並不讓它們的寬度改變(用row會改變寬度) */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 /* =========================================
 =                   navbar                 =
 ============================================*/
@@ -45,21 +38,15 @@ a:hover {
     position: relative;
     background-attachment: fixed;
     background-position: center;
-}
-
-#header>.container:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+    display: flex;
 }
 
 #header>.container {
     position: relative;
     z-index: 2;
     color: white;
-    display: inline-block;
-    vertical-align: middle;
+    display: grid;
+    align-self: center;
 }
 
 #header:after {
@@ -145,24 +132,56 @@ a:hover {
     color: #34495e;
     top: 250px;
 }
+
+/* 細部介紹 */
+.detail {
+    margin: 10px;
+    width: 100%;
+}
+
+.detail>img {
+    height: 300px;
+    border-radius: .2em;
+}
+
+/* .detail-text-container {} */
 /* ===================================
 =                 社徽               =
 ====================================== */
 .logo {
     border-radius: .2em;
     width: 300px;
+    height: 300px;
     margin: 10px;
 }
 
 .logo-descrp {
-    display: inline-block;
-    vertical-align: middle;
+    display: grid;
+    align-self: center;
     width: 500px;
     height: 200px;
     margin: 10px;
-    margin-top: 50px;
     border-radius: .2em;
+    overflow: hidden;
 }
+
+.logo-descrp-text-container {
+    position: relative;
+    top: 50px;
+    left: 10px;
+}
+
+.logo-descrp-main {
+    font-size: 1.5rem;
+}
+
+.logo-descrp-author {
+    margin-top: 20px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+
+
 
 /* ==================================
 =                 課程              =
@@ -173,13 +192,19 @@ a:hover {
     background-size: cover;
 }
 
+.card-order {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .lesson-card {
-    background: rgba(53, 74, 95, 0.8);
+    background: rgba(53, 74, 95, 0.6);
     height: 170px;
     margin: 10px;
     width: 30%;
     min-width: 350px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); */
     display: flex;
     position: relative;
     border-radius: 2px;
@@ -244,7 +269,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: block;
     overflow: hidden;
@@ -256,7 +281,7 @@ a:hover {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     display: block;
     overflow: hidden;
@@ -308,7 +333,7 @@ a:hover {
 @media (max-width: 576px) {
     /* header */
     #header {
-        height: 700px;
+        min-height: 700px;
     }
 
     /* 社徽 */
@@ -319,11 +344,12 @@ a:hover {
 
     /* 活動 */
     .tile1 {
-        height: 400px;
+        min-height: 500px;
     }
 
     .tile2 {
-        height: 400px;
+        min-height: 500px;
     }
+
 }
 
