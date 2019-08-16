@@ -14,7 +14,7 @@ h1, h2, h3 {
     margin-left: 10px;
 }
 
-h4, h5 {
+h4, h5, h6 {
     font-weight: bold;
 }
 
@@ -69,12 +69,12 @@ a:hover {
 
 .title:before {
     content: "< ";
-    color:#00c853;
+    color:#2ecc71;
 }
 
 .title:after {
     content: " >";
-    color: #00c853;
+    color: #2ecc71;
 }
 
 /*=============================== 
@@ -134,17 +134,22 @@ a:hover {
 }
 
 /* 細部介紹 */
-.detail {
-    margin: 10px;
-    width: 100%;
+.card-order {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .detail>img {
-    height: 300px;
     border-radius: .2em;
+    width: 100%;
 }
 
-/* .detail-text-container {} */
+.detail-text-container {
+    position: relative;
+    padding: 15px;
+    width: 100%;
+} 
 /* ===================================
 =                 社徽               =
 ====================================== */
@@ -207,7 +212,7 @@ a:hover {
     /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25); */
     display: flex;
     position: relative;
-    border-radius: 2px;
+    border-radius: .2em;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -219,7 +224,7 @@ a:hover {
 }
 
 .lesson-card:hover {
-    background: #44596e;
+    background: rgba(53, 74, 95, 1);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease-in-out;
 }
@@ -317,12 +322,18 @@ a:hover {
     color: rgba(255, 255, 255, 0.4);
     transition: all .3s ease-in-out;
     font-size: 30px;
-    padding: 15px;
+    padding: 7.5px;
 }
 
 .footer-icon:hover {
     color: #ffffff;
     transition: all .3s ease-in-out;
+}
+
+.footer-section {
+    margin-left: 5vw;
+    margin-bottom: 20px;
+    display: block;
 }
 
 
@@ -349,6 +360,11 @@ a:hover {
 
     .tile2 {
         min-height: 500px;
+    }
+
+    /* footer */
+    .footer-section {
+        margin-left: 10vw;
     }
 
 }
