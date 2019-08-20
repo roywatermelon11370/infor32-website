@@ -51,8 +51,7 @@
     <!-- header -->
     <header id="header" class="Jumbotron text-white text-center">
         <div class="container">
-            <h1 class="title">INFOR</h1>
-            <h2>32nd</h2><br>
+            <h1 class="title display-4">INFOR</h1><br>
             <h3>台北市立建國高級中學</h3>
             <h4>Taipei Municipal Chien Kuo High School</h4>
             <h3>資訊社</h3>
@@ -139,7 +138,7 @@
                   <p>上課時間: 每週五下午5:00</p>
                 </div>
                 
-                <button type="button" class="btn btn-outline-info simple-button" data-toggle="modal" data-target="#lesson1">了解更多</button>
+                <button type="button" class="btn btn-outline-info lesson-btn" data-toggle="modal" data-target="#lesson1">了解更多</button>
 
                 <!-- modal -->
                 <div class="modal fade" id="lesson1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -168,7 +167,7 @@
                   <p>上課時間: 每週五下午5:00</p>
                 </div>
 
-                <button type="button" class="btn btn-outline-warning simple-button" data-toggle="modal" data-target="#lesson2">了解更多</button>
+                <button type="button" class="btn btn-outline-warning lesson-btn" data-toggle="modal" data-target="#lesson2">了解更多</button>
 
                 <!-- modal -->
                 <div class="modal fade" id="lesson2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -197,7 +196,7 @@
                   <p>上課時間: 每週五下午5:00</p>
                 </div>
 
-                <button type="button" class="btn btn-outline-danger simple-button" data-toggle="modal" data-target="#lesson3">了解更多</button>
+                <button type="button" class="btn btn-outline-danger lesson-btn" data-toggle="modal" data-target="#lesson3">了解更多</button>
                 <!-- modal -->
                 <div class="modal fade" id="lesson3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -225,7 +224,7 @@
                   <p>上課時間: 每週五下午5:00</p>
                 </div>
                 
-                <button type="button" class="btn btn-outline-warning simple-button" data-toggle="modal" data-target="#lesson4">了解更多</button>
+                <button type="button" class="btn btn-outline-warning lesson-btn" data-toggle="modal" data-target="#lesson4">了解更多</button>
                 <!-- modal -->
                 <div class="modal fade" id="lesson4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -247,19 +246,19 @@
 
             <!-- lesson 5 -->
             <div class="lesson-card text-left">
-                <i class="mdi mdi-dns-outline icon text-center text-danger"></i>
+                <i class="mdi mdi-coffee-outline icon text-center text-danger"></i>
                 <div class="lesson-card-text">
-                  <h5>計概</h5>
+                  <h5>Java</h5>
                   <p>上課時間: 每週五下午5:00</p>
                 </div>
                 
-                <button type="button" class="btn btn-outline-danger simple-button" data-toggle="modal" data-target="#lesson5">了解更多</button>
+                <button type="button" class="btn btn-outline-danger lesson-btn" data-toggle="modal" data-target="#lesson5">了解更多</button>
                 <!-- modal -->
                 <div class="modal fade" id="lesson5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title text-dark" id="exampleModalCenterTitle">計概</h5>
+                          <h5 class="modal-title text-dark" id="exampleModalCenterTitle">Java</h5>
                         </div>
                         <div class="modal-body">
                             <img src="https://picsum.photos/id/518/600/300" class="modal-img">
@@ -281,7 +280,7 @@
                   <p>上課時間: 每週五下午5:00</p>
                 </div>
                 
-                <button type="button" class="btn btn-outline-info simple-button" data-toggle="modal" data-target="#lesson6">了解更多</button>
+                <button type="button" class="btn btn-outline-info lesson-btn" data-toggle="modal" data-target="#lesson6">了解更多</button>
 
                 <!-- modal -->
                 <div class="modal fade" id="lesson6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -306,26 +305,29 @@
     </div>
 
     <!-- 活動 -->
-    <div id="activity" class="pt-5 text-center text-white bg-dark">
+    <div id="activity" class="pt-5 text-center text-white bg-secondary">
         <!-- 介紹 -->
         <h3>各式活動</h3>
         <p class="px-3">誰說工程師都宅男？我們有密切合作的友社及多元的社團活動！</p><br>
         <!-- tiles -->
         <div class="tile1">
-            <div class="text-tile text-center px-5">
-                <h3>暑訓<br>
-                    良成楓景遇建你
-                </h3>
-                <p>由建國中學資訊社、成功高中電子計算機研習社、中山女高資訊研究社，以及景美女中電腦資訊社四個社團聯合舉辦。活動內容不僅包含精彩的實作課程，更涵蓋了精心備置的許多活動及企業參訪，希望能讓許多孩子在這升高中的暑假，享受一場美好的資訊饗宴。經由這次暑訓，同學將能對資訊科技有進一步的了解，亦可於資訊能力方面有所增長。</p>
-                <a href="https://izccsummercamp.infor.org" target="_blank" class="btn btn-outline-light">了 解 更 多</a>
+            <div class="text-tile text-left px-4">
+                <h5 class="ml-2">暑訓</h5>
+                <h1 class="display4 ml-1">良成楓景遇建你</h1>
+                <p class="ml-2">由建國中學資訊社、成功高中電子計算機研習社、中山女高資訊研究社，以及景美女中電腦資訊社四個社團聯合舉辦。活動內容不僅包含精彩的實作課程，更涵蓋了精心備置的許多活動及企業參訪，希望能讓許多孩子在這升高中的暑假，享受一場美好的資訊饗宴。經由這次暑訓，同學將能對資訊科技有進一步的了解，亦可於資訊能力方面有所增長。</p>
+                <div class="act-more-btn">
+                  <a href="https://izccsummercamp.infor.org" target="blank" class="text-center act-more-btn-icon ml-2 mdi mdi-arrow-right" data-toggle="tooltip" title="了解更多"></a>
+                </div>
             </div>
         </div>
 
         <div class="tile2">
-            <div class="text-tile text-center px-5">
-                <h3>迎新</h3>
-                <p>Coming soon~</p>
-                <a href="#" target="_blank" class="btn btn-outline-light">了 解 更 多</a>
+            <div class="text-tile text-left px-4">
+                <h5 class="ml-2">迎新</h5>
+                <p class="ml-2">Coming soon~</p>
+                <div class="act-more-btn">
+                  <a href="#" target="blank" class="text-center act-more-btn-icon ml-2 mdi mdi-egg-easter" data-toggle="tooltip" title="敬請期待!"></a>
+                </div>
             </div>
         </div>
 
@@ -338,16 +340,24 @@
       <div class="row justify-content-center">
         <div class="col-md-3 footer-section">
           <h5>歷屆社網</h5>
+          <span class="mdi mdi-earth text-primary"></span>
           <a href="https://29.infor.org">INFOR 29th</a><br>
+          <span class="mdi mdi-earth text-primary"></span>
           <a href="https://30.infor.org">INFOR 30th</a><br>
+          <span class="mdi mdi-earth text-primary"></span>
           <a href="https://31.infor.org">INFOR 31st</a>
         </div>
         <div class="col-md-3 footer-section">
           <h5>友社</h5>
+          <span class="mdi mdi-facebook-box text-primary"></span>
           <a href="">景美電資 26th</a><br>
+          <span class="mdi mdi-facebook-box text-primary"></span>
           <a href="">中山資研 26th</a><br>
+          <span class="mdi mdi-facebook-box text-primary"></span>
           <a href="">成功電研 32nd</a><br>
+          <span class="mdi mdi-facebook-box text-primary"></span>
           <a href="">建中電研 39th</a><br>
+          <span class="mdi mdi-facebook-box text-primary"></span>
           <a href="">北一資研 33rd</a>
         </div>
         <div class="col-md-3 footer-section">
