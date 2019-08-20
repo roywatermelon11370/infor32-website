@@ -211,7 +211,7 @@ a:hover {
     height: 170px;
     margin: 10px;
     width: 30%;
-    min-width: 350px;
+    min-width: 300px;
     display: flex;
     position: relative;
     border-radius: .2em;
@@ -219,17 +219,17 @@ a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 1158px) and (min-width:849px) {
+@media (max-width: 1008px) and (min-width: 689px) {
     .lesson-card {
-        width: 47.5%;
+        width: 45%;
     }
-}
+} 
 
-@media (max-width: 848px) {
+@media (max-width: 688px) {
     .lesson-card {
         width: 95%;
     }
-}
+} 
 
 .lesson-card-text {
     position: absolute;
@@ -312,6 +312,7 @@ a:hover {
     color: white;
     margin-top: 30vh;
     width: 60vw;
+    text-align: left;
 }
 
 [class^='tile']:after {
@@ -361,6 +362,26 @@ a:hover {
     line-height: 80px;
     margin-bottom: 0px;
     margin-top: 0px;
+}
+
+@media (max-width: 750px) and (min-width: 577px){
+    .text-tile {
+        margin-top: 25vh;
+        width: 80vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-tile {
+        text-align: center;
+        width: 100vw;
+        margin-top: 5rem;
+        justify-content: center;
+    }
+
+    .act-more-btn {
+        width: 100%;
+    }
 }
 
 /* =============================
