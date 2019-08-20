@@ -9,7 +9,7 @@ $(document).ready(function(){
             console.log(element)
             $("#lesson_lists").append(
                 `<div class="lesson-card text-left">
-                    <i class="mdi mdi-flag-outline icon text-center text-info"></i>
+                    <i class="${element.iconCLASS}"></i>
                     <div class="lesson-card-text">
                         <h5>${element.title}</h5>
                         <p>上課時間: ${element.time}</p>
