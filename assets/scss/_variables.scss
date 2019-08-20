@@ -34,16 +34,16 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #3498db !default;
+$blue:    #2979ff !default;
 $indigo:  #34495e !default;
-$purple:  #9b59b6 !default;
-$pink:    #e83e8c !default;
-$red:     #e74c3c !default;
-$orange:  #e67e22 !default;
-$yellow:  #f1c40f !default;
-$green:   #2ecc71 !default;
-$teal:    #1abc9c !default;
-$cyan:    #1abc9c !default;
+$purple:  #651fff !default;
+$pink:    #f50057 !default;
+$red:     #ff1744 !default;
+$orange:  #ffc400 !default;
+$yellow:  #ffea00 !default;
+$green:   #00e676 !default;
+$teal:    #1de9b6 !default;
+$cyan:    #1de9b6 !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -174,7 +174,7 @@ $body-color:                $gray-900 !default;
 $link-color:                              theme-color("primary") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
-$link-hover-decoration:                   underline !default;
+$link-hover-decoration:                   none !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
 
