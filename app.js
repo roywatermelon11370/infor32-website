@@ -21,7 +21,7 @@ app.use('/assets',express.static(path.join(__dirname, 'assets')));
 app.use(express.static(path.join(__dirname, 'html')));
 
 
-// app.use('/', indexRouter);
+app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
