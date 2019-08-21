@@ -34,16 +34,16 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #2979ff !default;
+$blue:    #3498db !default;
 $indigo:  #34495e !default;
 $purple:  #651fff !default;
 $pink:    #f50057 !default;
-$red:     #ff1744 !default;
-$orange:  #ffc400 !default;
-$yellow:  #ffea00 !default;
-$green:   #00e676 !default;
-$teal:    #1de9b6 !default;
-$cyan:    #1de9b6 !default;
+$red:     #e74c3c !default;
+$orange:  #e67e22 !default;
+$yellow:  #f1c40f !default;
+$green:   #2ecc71 !default;
+$teal:    #1abc9c !default;
+$cyan:    #1abc9c !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -959,9 +959,9 @@ $modal-lg:                          800px !default;
 $modal-md:                          500px !default;
 $modal-sm:                          300px !default;
 
-$modal-fade-transform:              translate(0, 50px) !default;
+$modal-fade-transform:              scale(0.5);
 $modal-show-transform:              none !default;
-$modal-transition:                  transform .3s ease-in-out !default;
+$modal-transition:                  transform .3s cubic-bezier(0,.59,.43,.99);
 
 
 // Alerts
