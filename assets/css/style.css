@@ -67,7 +67,7 @@ a:hover {
 }
 
 .title {
-    /* font-weight: bold; */
+    letter-spacing: 10px;
 }
 
 .title:before {
@@ -219,6 +219,18 @@ a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+.border-danger {
+    border: 2px solid #ff1744;
+}
+
+.border-warning {
+    border: 2px solid #ffea00;
+}
+
+.border-info {
+    border: 2px solid #1de9b6;
+}
+
 @media (max-width: 1008px) and (min-width: 689px) {
     .lesson-card {
         width: 45%;
@@ -340,7 +352,7 @@ a:hover {
 .act-more-btn-icon {
     font-size: 35px;
     color: #ffffff;
-    background: #ffffff33;
+    background: rgba(255, 255, 255, 0.25);
     border-radius: 100%;
     overflow: hidden;
     line-height: 70px;
@@ -375,12 +387,22 @@ a:hover {
     .text-tile {
         text-align: center;
         width: 100vw;
-        margin-top: 5rem;
-        justify-content: center;
+        bottom: 30px;
+        margin-top: 30px;
     }
 
     .act-more-btn {
         width: 100%;
+    }
+
+    .tile1 {
+        height: auto;
+        min-height: 500px;;
+    }
+
+    .tile2 {
+        height: auto;
+        min-height: 500px;
     }
 }
 
@@ -405,6 +427,16 @@ a:hover {
     display: block;
 }
 
+.footer-section>a {
+    color: white;
+    transition: all .25s ease-in-out;
+}
+
+.footer-section>a:hover {
+    color: #2979ff;
+    transition: all .25s ease-in-out;
+}
+
 
 
 
@@ -420,15 +452,6 @@ a:hover {
     .logo-descrp {
         margin: 25px;
         width: 400px;
-    }
-
-    /* 活動 */
-    .tile1 {
-        min-height: 500px;
-    }
-
-    .tile2 {
-        min-height: 500px;
     }
 
     /* footer */
