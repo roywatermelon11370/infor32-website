@@ -93,7 +93,7 @@ a:hover {
 
 .iconorder .icon {
     font-size: 30px;
-    background: #2962ff;
+    background: #2980b9;
     border-radius: 100%;
     overflow: hidden;
     line-height: 70px;
@@ -195,18 +195,18 @@ a:hover {
 /* ==================================
 =                 課程              =
 ===================================== */
-#lesson {
+#course {
     background-position: center;
     background-size: cover;
 }
 
-.card-order {
+.card-array {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.lesson-card {
+.course-card {
     background: rgba(53, 74, 95, 1);
     height: 170px;
     margin: 10px;
@@ -232,30 +232,30 @@ a:hover {
 }
 
 @media (max-width: 1008px) and (min-width: 689px) {
-    .lesson-card {
+    .course-card {
         width: 45%;
     }
 } 
 
 @media (max-width: 688px) {
-    .lesson-card {
+    .course-card {
         width: 95%;
     }
 } 
 
-.lesson-card-text {
+.course-card-text {
     position: absolute;
     top: 20px;
     left: 85px;
 }
 
-.lesson-card:hover {
+.course-card:hover {
     background: rgba(53, 74, 95, 1);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease-in-out;
 }
 
-.lesson-card .icon {
+.course-card .icon {
     font-size: 30px;
     position: absolute;
     width: 75px;
@@ -266,7 +266,7 @@ a:hover {
     overflow: hidden;
 }
 
-.lesson-btn {
+.course-btn {
     /* 課程卡片上的按鈕 */
     position: absolute;
     bottom: 10px;
@@ -278,7 +278,7 @@ a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.lesson-btn:focus {
+.course-btn:focus {
     box-shadow: 0px 0px 0px transparent;
 }
 
@@ -322,9 +322,10 @@ a:hover {
     position: absolute;
     z-index: 2;
     color: white;
-    margin-top: 30vh;
     width: 60vw;
     text-align: left;
+    top:50%;
+    transform: translate(0, -50%);
 }
 
 [class^='tile']:after {
@@ -337,7 +338,7 @@ a:hover {
     width: 100%;
     height: 100%;
     background: black;
-    opacity: 0.4;
+    opacity: 0.35;
     z-index: 1;
 }
 
@@ -359,26 +360,28 @@ a:hover {
     width: 70px;
     height: 70px;
     margin: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    transition: all .25s ease-out;
-    vertical-align: middle;
+    transition: all .3s cubic-bezier(0,.59,.43,.99);
 }
 
 .act-more-btn-icon:hover {
     color: black;
     background: #ffffff;
-    transition: all .25s ease-out;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    box-shadow: 0px 7.5px 20px rgba(0, 0, 0, 0.5); 
+    transition: all .3s cubic-bezier(0,.59,.43,.99);
+    transform: scale(1.2);
+}
+
+.act-more-btn-icon:active {
+    color: black;
+    background: #ffffff;
+    opacity: 0.5;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); 
+    transition: all .1s cubic-bezier(0,.59,.43,.99);
+    transform: scale(1.05);
 }
 
 @media (max-width: 750px) and (min-width: 577px){
     .text-tile {
-        margin-top: 25vh;
         width: 80vw;
     }
 }
@@ -387,8 +390,6 @@ a:hover {
     .text-tile {
         text-align: center;
         width: 100vw;
-        bottom: 30px;
-        margin-top: 30px;
     }
 
     .act-more-btn {
@@ -404,21 +405,21 @@ a:hover {
         height: auto;
         min-height: 500px;
     }
-}
+} 
 
 /* =============================
 =           footer             =
 ================================ */
 .footer-icon {
     color: rgba(255, 255, 255, 0.4);
-    transition: all .3s ease-in-out;
+    transition: all .25s ease-in-out;
     font-size: 30px;
     padding: 7.5px;
 }
 
 .footer-icon:hover {
     color: #ffffff;
-    transition: all .3s ease-in-out;
+    transition: all .25s ease-in-out;
 }
 
 .footer-section {
@@ -433,7 +434,7 @@ a:hover {
 }
 
 .footer-section>a:hover {
-    color: #2979ff;
+    color: #3498db;
     transition: all .25s ease-in-out;
 }
 
