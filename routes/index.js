@@ -8,8 +8,9 @@ var router = express.Router();
 router.get('/courses', function(req, res, next) {
     var jsonPath = path.resolve(__dirname,"../courses.json");
     var course = JSON.parse(fs.readFileSync(jsonPath,'utf-8'));
-    res.json(course)
-    console.log(`${JSON.stringify(course)}`)
+    // res.status = 404;
+    res.json(course);
+    // console.log(`${JSON.stringify(course)}`)
 });
 
 module.exports = router;
