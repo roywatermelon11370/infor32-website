@@ -1,5 +1,18 @@
 $(document).ready(function(){ 
     console.log('7122');
+	if($(window).width()<=576) {
+			$('#navbar').removeClass('alt');
+		}
+		else if($(window).width()>576) {
+			$(window).on('scroll', function() {
+				if($(window).scrollTop()) {
+					$('#navbar').removeClass('alt');
+				}
+				else {
+					$('#navbar').addClass('alt');
+				}
+			})
+		}
 	$(window).resize(function() {
 		if($(window).width()<=576) {
 			$('#navbar').removeClass('alt');
