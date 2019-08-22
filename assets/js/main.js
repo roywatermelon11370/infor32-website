@@ -37,7 +37,7 @@ $(document).ready(function(){
                 console.log(element)
                 $("#lesson_lists").append(
                     `<div class="lesson-card text-left">
-                        <i class="${element.iconCLASS} text-info"></i>
+                        <i class="${element.iconCLASS} ${element.colorCLASS}"></i>
                         <div class="lesson-card-text">
                             <h5>${element.title}</h5>
                             <p>上課時間：${element.time}</p>
@@ -75,12 +75,13 @@ $(document).ready(function(){
                 "iconCLASS":"mdi mdi-flag-outline icon text-center text-info",
                 "time":"待公告",
                 "img":"",
+                "colorCLASS":"text-info",
                 "id":"0",
                 "description":"敬請期帶"
             }
             $("#lesson_lists").append(
                 `<div class="lesson-card text-left">
-                    <i class="${course.iconCLASS} text-info"></i>
+                    <i class="${course.iconCLASS} ${course.colorCLASS}"></i>
                     <div class="lesson-card-text">
                         <h5>${course.title}</h5>
                         <p>上課時間：${course.time}</p>
