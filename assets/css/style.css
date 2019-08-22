@@ -29,7 +29,24 @@ a:hover {
 /* =========================================
 =                   navbar                 =
 ============================================*/
+#navbar {
+    background: #2c3e50;
+    transition: all .3s ease-in-out;
+}
 
+#navbar.alt {
+    background: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.navbar-brand {
+    transition: all .3s ease-in-out;
+}
+
+#navbar.alt .navbar-brand {
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
 
 
 /* ==================================
@@ -85,7 +102,7 @@ a:hover {
 ==================================*/
 
 
-.iconorder {
+.iconarray {
     /* 排序圖示，不會換行 */
     display: flex;
     justify-content: center;
@@ -195,7 +212,7 @@ a:hover {
 /* ==================================
 =                 課程              =
 ===================================== */
-#course {
+#lesson {
     background-position: center;
     background-size: cover;
 }
@@ -206,7 +223,7 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.course-card {
+.lesson-card {
     background: rgba(53, 74, 95, 1);
     height: 170px;
     margin: 10px;
@@ -232,30 +249,30 @@ a:hover {
 }
 
 @media (max-width: 1008px) and (min-width: 689px) {
-    .course-card {
+    .lesson-card {
         width: 45%;
     }
 } 
 
 @media (max-width: 688px) {
-    .course-card {
+    .lesson-card {
         width: 95%;
     }
 } 
 
-.course-card-text {
+.lesson-card-text {
     position: absolute;
     top: 20px;
     left: 85px;
 }
 
-.course-card:hover {
+.lesson-card:hover {
     background: rgba(53, 74, 95, 1);
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
     transition: all 0.3s ease-in-out;
 }
 
-.course-card .icon {
+.lesson-card .icon {
     font-size: 30px;
     position: absolute;
     width: 75px;
@@ -266,7 +283,7 @@ a:hover {
     overflow: hidden;
 }
 
-.course-btn {
+.lesson-btn {
     /* 課程卡片上的按鈕 */
     position: absolute;
     bottom: 10px;
@@ -278,7 +295,7 @@ a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.course-btn:focus {
+.lesson-btn:focus {
     box-shadow: 0px 0px 0px transparent;
 }
 
@@ -369,6 +386,7 @@ a:hover {
     box-shadow: 0px 7.5px 20px rgba(0, 0, 0, 0.5); 
     transition: all .3s cubic-bezier(0,.59,.43,.99);
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 .act-more-btn-icon:active {
