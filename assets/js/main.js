@@ -1,4 +1,21 @@
 $(document).ready(function(){ 
+    console.log('7122');
+	$(window).resize(function() {
+		if($(window).width()<=576) {
+			$('#navbar').removeClass('alt');
+		}
+		else if($(window).width()>576) {
+			$(window).on('scroll', function() {
+				if($(window).scrollTop()) {
+					$('#navbar').removeClass('alt');
+				}
+				else {
+					$('#navbar').addClass('alt');
+				}
+			})
+		}
+	});
+    
     fetch("/courses").then(function(response) {
         return response.json();
     }).catch(function(err){
