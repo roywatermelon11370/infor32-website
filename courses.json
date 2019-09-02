@@ -12,7 +12,7 @@
         {
             "title":"frontend develop",
             "iconCLASS":"mdi mdi-web icon text-center text-warning",
-            "time":"每週二下午6：00~7：00",
+            "time":"每週二下午6:00~7:00",
             "colorCLASS":"text-warning",
             "img":"https://uploads.toptal.io/blog/image/125783/toptal-blog-image-1522333595770-14ba14a2f6099482fa9189f8764dd5ad.png",
             "id":"2",
@@ -30,7 +30,7 @@
         {
             "title":"硬體",
             "iconCLASS":"mdi mdi-memory icon text-center text-warning",
-            "time":"每周四下午6:00~7:00",
+            "time":"每週四下午6:00~7:00",
             "colorCLASS":"text-warning",
             "img":"https://farm2.static.flickr.com/1943/31653058398_9de9800cc5.jpg",
             "id":"4",
