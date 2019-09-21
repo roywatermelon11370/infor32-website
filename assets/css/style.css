@@ -18,7 +18,7 @@ h2, h3 {
     margin-left: 10px;
 }
 
-h4, h5{
+h4{
     font-weight: bold;
 }
 
@@ -311,28 +311,22 @@ a:hover {
 ==================================== */
 
 
-.tile1 {
-    /* 第一個圖片(暑訓) */
-    background-image: url('../image/summercamp.bmp');
+.tile {
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 500px;
+    width: 47.5%;
     position: relative;
     display: block;
     overflow: hidden;
+    border-radius: .2em;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-.tile2 {
-    /* 第二個圖片(迎新) */
-    background-image: url('../image/new.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 100vh;
-    position: relative;
-    display: block;
-    overflow: hidden;
+.tile:hover {
+    transform: scale(1.03);
+    transition: all .3s cubic-bezier(0,.59,.43,.99);
 }
 
 .text-tile {
@@ -340,8 +334,7 @@ a:hover {
     position: absolute;
     z-index: 2;
     color: white;
-    width: 60vw;
-    text-align: left;
+    width: 100%;
     top:50%;
     transform: translate(0, -50%);
 }
@@ -356,13 +349,13 @@ a:hover {
     width: 100%;
     height: 100%;
     background: black;
-    opacity: 0.35;
+    opacity: 0.4;
     z-index: 1;
 }
 
 .act-more-btn {
     display: flex;
-    width: 120px;
+    width: 100%;
     height: 80px;
     justify-content: center;
     align-self: center;
@@ -399,32 +392,11 @@ a:hover {
     transform: scale(1.05);
 }
 
-@media (max-width: 750px) and (min-width: 577px){
-    .text-tile {
-        width: 80vw;
+@media (max-width: 848px) {
+    .tile {
+        width: 95%;
     }
 }
-
-@media (max-width: 576px) {
-    .text-tile {
-        text-align: center;
-        width: 100vw;
-    }
-
-    .act-more-btn {
-        width: 100%;
-    }
-
-    .tile1 {
-        height: auto;
-        min-height: 500px;;
-    }
-
-    .tile2 {
-        height: auto;
-        min-height: 500px;
-    }
-} 
 
 /* =============================
 =           footer             =
