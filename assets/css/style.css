@@ -49,6 +49,13 @@ a:hover {
     transition: all .3s ease-in-out;
 }
 
+@media (max-width: 576px) {
+    #navbar.alt {
+        background: #2c3e50;
+        transition: all .3s ease-in-out;
+    }
+}
+
 
 /* ==================================
 =               header              =

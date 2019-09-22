@@ -1,32 +1,17 @@
 $(document).ready(function(){ 
-	if($(window).width()<=576) {
-			$('#navbar').removeClass('alt');
-		}
-		else if($(window).width()>576) {
-			$(window).on('scroll', function() {
-				if($(window).scrollTop()) {
-					$('#navbar').removeClass('alt');
-				}
-				else {
-					$('#navbar').addClass('alt');
-				}
-			})
-		}
-	$(window).resize(function() {
-		if($(window).width()<=576) {
-			$('#navbar').removeClass('alt');
-		}
-		else if($(window).width()>576) {
-			$(window).on('scroll', function() {
-				if($(window).scrollTop()) {
-					$('#navbar').removeClass('alt');
-				}
-				else {
-					$('#navbar').addClass('alt');
-				}
-			})
-		}
-	}); 
+    if (/(iPhone|iPad|iPod)/i.test(navigator.userAgent)) {   
+        $("#header").removeClass("bg-fixed");   
+    };  
+
+	$(window).on('scroll', function() {
+        if($(window).scrollTop()) {
+            $('#navbar').removeClass('alt');
+        }
+        else {
+            $('#navbar').addClass('alt');
+        }
+    })
+
     try {
         fetch("/courses",{method:"get",mode:"cors"}).then(function(response) {
             return response.json();
@@ -42,7 +27,7 @@ $(document).ready(function(){
                             <h5>${element.title}</h5>
                             <p>上課時間：${element.time}</p>
                         </div>
-                        <button type="button" class="btn btn-outline-info lesson-btn" data-toggle="modal"
+                        <button type="button" class="btn btn-outline ${element.colorCLASS} lesson-btn" data-toggle="modal"
                             data-target="#lesson${element.id}">了解更多</button>
                     </div>`
                 );
