@@ -1,6 +1,7 @@
 $(document).ready(function(){ 
-    if (!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {   
-        $("#header").removeClass("bg-fixed");   
+
+    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {   
+        $('#header').removeClass('bg-fixed');   
     }
 
 	$(window).on('scroll', function() {
