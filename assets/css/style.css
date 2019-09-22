@@ -27,6 +27,10 @@ a:hover {
     border-bottom-color: transparent;
 }
 
+.bg-fixed {
+    background-attachment: fixed;
+}
+
 /* =========================================
 =                   navbar                 =
 ============================================*/
@@ -65,7 +69,6 @@ a:hover {
     background-size: cover;
     height: 100vh;
     position: relative;
-    background-attachment: fixed;
     background-position: center;
     display: flex;
 }

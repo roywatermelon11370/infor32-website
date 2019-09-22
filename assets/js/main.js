@@ -1,5 +1,5 @@
 $(document).ready(function(){ 
-    if (/(iPhone|iPad|iPod)/i.test(navigator.userAgent)) {   
+    if (!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {   
         $("#header").removeClass("bg-fixed");   
     };  
 
