@@ -327,10 +327,11 @@ a:hover {
 }
 
 .act-img {
-    min-height: 300px;
+    min-height: 275px;
     width: 100%;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: .2em;
 }
 

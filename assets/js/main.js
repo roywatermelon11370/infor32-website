@@ -14,10 +14,8 @@ $(document).ready(function () {
     })
 
     $('#BackToTop').click(function () {
-        console.log(this);
         let target = $(this).attr('href');
         let position = $(target).offset().top;
-        console.log('目標座標:' , position);
         $('html,body').animate({
             scrollTop: position
         }, 500, 'swing');
