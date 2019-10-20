@@ -959,9 +959,9 @@ $modal-lg:                          800px !default;
 $modal-md:                          500px !default;
 $modal-sm:                          300px !default;
 
-$modal-fade-transform:              scale(0.3);
+$modal-fade-transform:              scale(0.6);
 $modal-show-transform:              none !default;
-$modal-transition:                  transform .27s cubic-bezier(0,.88,.28,1.01);
+$modal-transition:                  transform .3s cubic-bezier(.27,.62,.37,1.18);
 
 
 // Alerts
