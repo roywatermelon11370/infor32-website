@@ -1,11 +1,11 @@
-$(document).ready(function(){ 
+$(document).ready(function () {
 
-    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {   
-        $('#header').removeClass('bg-fixed');   
+    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+        $('#header').removeClass('bg-fixed');
     }
 
-	$(window).on('scroll', function() {
-        if($(window).scrollTop()) {
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop()) {
             $('#navbar').removeClass('alt');
         }
         else {
@@ -13,12 +13,22 @@ $(document).ready(function(){
         }
     })
 
+    $('#BackToTop').click(function () {
+        console.log(this);
+        let target = $(this).attr('href');
+        let position = $(target).offset().top;
+        console.log('目標座標:' , position);
+        $('html,body').animate({
+            scrollTop: position
+        }, 500, 'swing');
+    });
+
     try {
-        fetch("/courses",{method:"get",mode:"cors"}).then(function(response) {
+        fetch("/courses", { method: "get", mode: "cors" }).then(function (response) {
             return response.json();
-        }).catch(function(err){
+        }).catch(function (err) {
             throw err;
-        }).then(function(json){
+        }).then(function (json) {
             json.courses.forEach(element => {
                 console.log(element)
                 $("#lesson_lists").append(
@@ -54,19 +64,19 @@ $(document).ready(function(){
                 )
             });
         });
-        }catch(e) {
-            console.log(e);
-            var course = {
-                "title":"規劃中",
-                "iconCLASS":"mdi mdi-flag-outline icon text-center text-info",
-                "time":"待公告",
-                "img":"",
-                "colorCLASS":"text-info",
-                "id":"0",
-                "description":"敬請期帶"
-            }
-            $("#lesson_lists").append(
-                `<div class="lesson-card text-left">
+    } catch (e) {
+        console.log(e);
+        var course = {
+            "title": "規劃中",
+            "iconCLASS": "mdi mdi-flag-outline icon text-center text-info",
+            "time": "待公告",
+            "img": "",
+            "colorCLASS": "text-info",
+            "id": "0",
+            "description": "敬請期帶"
+        }
+        $("#lesson_lists").append(
+            `<div class="lesson-card text-left">
                     <i class="${course.iconCLASS} ${course.colorCLASS}"></i>
                     <div class="lesson-card-text">
                         <h5>${course.title}</h5>
@@ -75,9 +85,9 @@ $(document).ready(function(){
                     <button type="button" class="btn btn-outline-info lesson-btn" data-toggle="modal"
                         data-target="#lesson${course.id}">了解更多</button>
                 </div>`
-            );
-            $("#modals").append(
-                `<div class="modal fade" id="lesson${course.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        );
+        $("#modals").append(
+            `<div class="modal fade" id="lesson${course.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                 aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -95,6 +105,6 @@ $(document).ready(function(){
                     </div>
                 </div>
                 </div>`
-            )
-        }
+        )
+    }
 });
