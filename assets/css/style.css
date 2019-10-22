@@ -237,9 +237,9 @@ a:hover {
 
 .lesson-card {
     background: rgba(53, 74, 95, 1);
-    height: 170px;
+    height: 200px;
     margin: 10px;
-    padding: 15px;
+    padding: 25px;
     width: 30%;
     min-width: 300px;
     display: flex;
@@ -274,9 +274,8 @@ a:hover {
 } 
 
 .lesson-card-text {
-    position: absolute;
-    top: 20px;
-    left: 85px;
+    position: relative;
+    margin-top: 40px;
 }
 
 .lesson-card:hover {
