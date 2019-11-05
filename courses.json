@@ -13,7 +13,7 @@
             "title":"frontend develop",
             "iconCLASS":"mdi mdi-web icon text-center text-warning",
             "time":"每週二下午6:00~7:00",
-            "colorCLASS":"text-warning",
+            "colorCLASS":"text-success",
             "img":"https://uploads.toptal.io/blog/image/125783/toptal-blog-image-1522333595770-14ba14a2f6099482fa9189f8764dd5ad.png",
             "id":"2",
             "description":"想知道網頁是怎麼寫出來的嗎？這個課程會教你如何寫出一個網頁，其中會學到HTML5/CSS和JS。從基本語法一直教到進階的相關應用。學完這個課後相信大家都有能力學會如何製作網站"
@@ -31,7 +31,7 @@
             "title":"硬體",
             "iconCLASS":"mdi mdi-memory icon text-center text-warning",
             "time":"每週四下午6:00~7:00",
-            "colorCLASS":"text-warning",
+            "colorCLASS":"text-success",
             "img":"https://farm2.static.flickr.com/1943/31653058398_9de9800cc5.jpg",
             "id":"4",
             "description":"資訊並不只有1與0的傳輸及改變，你是否希望對承載這一切的機器有更進一步的了解呢，你是否會希望能判斷為何一台筆店多了一顆水果就可以售價高昂，抑或是你是否希望能夠知道為何別人的電腦能比自己的更順暢，還是你只是想知道如何省檢測費自行DEBUG電腦的問題以及如何自己維修簡單的硬體故障，這堂課會一步步地帶著你從硬體蒙新變成能理解為何電腦這麼貴、和便宜。"
