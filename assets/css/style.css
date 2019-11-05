@@ -288,13 +288,13 @@ a:hover {
         transition: all 0.3s cubic-bezier(0,.59,.43,.99);
     }
 
-@media (max-width: 1008px) and (min-width: 689px) {
+@media (max-width: 1200px) and (min-width: 768px) {
     .lesson-card {
         width: 45%;
     }
 } 
 
-@media (max-width: 688px) {
+@media (max-width: 768px) {
     .lesson-card {
         width: 95%;
     }
