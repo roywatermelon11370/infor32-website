@@ -30,7 +30,7 @@ $(document).ready(function () {
             json.courses.forEach(element => {
                 console.log(element)
                 $("#lesson_lists").append(
-                    `<div class="lesson-card text-left">
+                    `<div class="lesson-card bg-secondary text-left">
                         <i class="${element.iconCLASS} ${element.colorCLASS}"></i>
                         <div class="lesson-card-text">
                             <h5>${element.title}</h5>
@@ -74,7 +74,7 @@ $(document).ready(function () {
             "description": "敬請期帶"
         }
         $("#lesson_lists").append(
-            `<div class="lesson-card text-left">
+            `<div class="lesson-card bg-secondary text-left">
                     <i class="${course.iconCLASS} ${course.colorCLASS}"></i>
                     <div class="lesson-card-text">
                         <h5>${course.title}</h5>
