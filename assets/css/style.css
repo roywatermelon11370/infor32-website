@@ -32,16 +32,40 @@ a:hover {
     background-attachment: fixed;
 }
 
+.btn-animated {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    }
+    .btn-animated::before {
+        content: "";
+        width: 0;
+        background: #2780e3;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0; 
+        transition: all 0.3s ease-out;
+        z-index: -1;
+    }
+    .btn-animated:hover {
+        background: transparent;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn-animated:hover::before {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    
 /* =========================================
 =                   navbar                 =
 ============================================*/
 #navbar {
-    background: #2c3e50;
     transition: all .3s ease-in-out;
 }
 
 #navbar.alt {
-    background: transparent;
+    background: transparent !important;
     transition: all .3s ease-in-out;
 }
 
@@ -60,6 +84,8 @@ a:hover {
         transition: all .3s ease-in-out;
     }
 }
+
+
 
 
 /* ==================================
@@ -97,16 +123,17 @@ a:hover {
 
 .title {
     letter-spacing: 10px;
+    font-weight: 500;
 }
 
 .title:before {
     content: "< ";
-    color:#2ecc71;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .title:after {
     content: " >";
-    color: #2ecc71;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 /*=============================== 
@@ -122,7 +149,6 @@ a:hover {
 
 .iconarray .icon {
     font-size: 30px;
-    background: #2980b9;
     border-radius: 100%;
     overflow: hidden;
     line-height: 70px;
@@ -166,6 +192,20 @@ a:hover {
 }
 
 /* 細部介紹 */
+#intro-detail {
+    position: relative;
+}
+
+#intro-detail::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background-color: #2780e3;
+    z-index: 0;
+}
 
 .card-order {
     display: flex;
@@ -174,7 +214,6 @@ a:hover {
 }
 
 .detail>img {
-    border-radius: .2em;
     width: 100%;
 }
 
@@ -187,7 +226,6 @@ a:hover {
 =                 社徽               =
 ====================================== */
 .logo {
-    border-radius: .2em;
     width: 300px;
     height: 300px;
     margin: 10px;
@@ -199,7 +237,6 @@ a:hover {
     width: 500px;
     height: 200px;
     margin: 10px;
-    border-radius: .2em;
     overflow: hidden;
 }
 
@@ -244,22 +281,13 @@ a:hover {
     min-width: 300px;
     display: flex;
     position: relative;
-    border-radius: .2em;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-.border-danger {
-    border: 2px solid #ff1744;
-}
-
-.border-warning {
-    border: 2px solid #ffea00;
-}
-
-.border-info {
-    border: 2px solid #1de9b6;
-}
+    transition: all 0.3s ease-in-out;}
+    .lesson-card:hover {
+        background: rgba(53, 74, 95, 1);
+        transform: scale(1.02);
+        transition: all 0.3s cubic-bezier(0,.59,.43,.99);
+    }
 
 @media (max-width: 1008px) and (min-width: 689px) {
     .lesson-card {
@@ -278,11 +306,6 @@ a:hover {
     margin-top: 40px;
 }
 
-.lesson-card:hover {
-    background: rgba(53, 74, 95, 1);
-    transform: scale(1.02);
-    transition: all 0.3s cubic-bezier(0,.59,.43,.99);
-}
 
 .lesson-card .icon {
     font-size: 30px;
@@ -291,7 +314,6 @@ a:hover {
     margin-top: 12.5px;
     top: 0px;
     left: 0px;
-    border-radius: 2px;
     overflow: hidden;
 }
 
@@ -305,16 +327,15 @@ a:hover {
     background: transparent;
     border: transparent;
     transition: all 0.3s ease-in-out;
-}
+    }
+    .lesson-btn:focus {
+        box-shadow: 0px 0px 0px transparent;
+    }
 
-.lesson-btn:focus {
-    box-shadow: 0px 0px 0px transparent;
-}
 
 .modal-img {
     width: 100%;
     height: auto;
-    border-radius: 2px;
 }
 
 /* ================================
@@ -331,7 +352,6 @@ a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: .2em;
 }
 
 .act-descrp {
@@ -340,94 +360,6 @@ a:hover {
     display: grid;
     align-self: center;
 }
-
-/* .tile {
-    background-size: cover;
-    background-position: center;
-    min-height: 500px;
-    width: 47.5%;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    border-radius: .2em;
-    margin: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.tile:hover {
-    transform: scale(1.03);
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
-    transition: all .3s cubic-bezier(0,.59,.43,.99);
-}
-
-.text-tile {
-    
-    position: absolute;
-    z-index: 2;
-    color: white;
-    width: 100%;
-    top:50%;
-    transform: translate(0, -50%);
-}
-
-[class^='tile']:after {
-    
-    content: "";
-    display: block;
-    position: absolute;
-    top:0px;
-    left:0px;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 0.4;
-    z-index: 1;
-}
-
-.act-more-btn {
-    display: flex;
-    width: 100%;
-    height: 80px;
-    justify-content: center;
-    align-self: center;
-}
-
-.act-more-btn-icon {
-    font-size: 35px;
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 100%;
-    overflow: hidden;
-    line-height: 70px;
-    width: 70px;
-    height: 70px;
-    margin: 20px;
-    transition: all .3s cubic-bezier(0,.59,.43,.99);
-}
-
-.act-more-btn-icon:hover {
-    color: black;
-    background: #ffffff;
-    box-shadow: 0px 7.5px 20px rgba(0, 0, 0, 0.5); 
-    transition: all .3s cubic-bezier(0,.59,.43,.99);
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.act-more-btn-icon:active {
-    color: black;
-    background: #ffffff;
-    opacity: 0.5;
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); 
-    transition: all .1s cubic-bezier(0,.59,.43,.99);
-    transform: scale(1.05);
-}
-
-@media (max-width: 848px) {
-    .tile {
-        width: 97.5%;
-    }
-} */
 
 /* =============================
 =           footer             =

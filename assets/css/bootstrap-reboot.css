@@ -101,11 +101,11 @@ sup {
   top: -.5em; }
 
 a {
-  color: #3498db;
+  color: #2780E3;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #1d6fa5;
+    color: #165ba8;
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -146,7 +146,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
+  color: #868e96;
   text-align: left;
   caption-side: bottom; }
 

@@ -11,9 +11,9 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #868e96 !default;
 $gray-700: #495057 !default;
-$gray-800: #2c3e50 !default;
+$gray-800: #373a3c !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
@@ -34,16 +34,16 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #3498db !default;
-$indigo:  #34495e !default;
-$purple:  #651fff !default;
-$pink:    #f50057 !default;
-$red:     #e74c3c !default;
-$orange:  #e67e22 !default;
-$yellow:  #f1c40f !default;
-$green:   #2ecc71 !default;
-$teal:    #1abc9c !default;
-$cyan:    #1abc9c !default;
+$blue:    #2780E3 !default;
+$indigo:  #6610f2 !default;
+$purple:  #613d7c !default;
+$pink:    #e83e8c !default;
+$red:     #FF0039 !default;
+$orange:  #f0ad4e !default;
+$yellow:  #FF7518 !default;
+$green:   #3FB618 !default;
+$teal:    #20c997 !default;
+$cyan:    #9954BB !default;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -67,14 +67,13 @@ $colors: map-merge(
 );
 
 $primary:       $blue !default;
-$secondary:     $indigo !default;
+$secondary:     $gray-800 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$awesome:       $purple ;
 $light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$dark:          $gray-900 !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -109,7 +108,7 @@ $yiq-text-light:            $white !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                                true !default;
-$enable-rounded:                              true !default;
+$enable-rounded:                              false !default;
 $enable-shadows:                              false !default;
 $enable-gradients:                            false !default;
 $enable-transitions:                          true !default;
@@ -234,9 +233,9 @@ $line-height-sm:              1.5 !default;
 $border-width:                1.7px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               .2rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-sm:            .2rem !default;
+$border-radius:               .15rem !default;
+$border-radius-lg:            .2rem !default;
+$border-radius-sm:            .1rem !default;
 
 $rounded-pill:                50rem !default;
 
@@ -382,23 +381,23 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         .425rem !default;
+$input-btn-padding-x:         1.25rem !default;
 $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
 
-$input-btn-focus-width:       .2rem !default;
+$input-btn-focus-width:       .1rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-btn-padding-y-sm:      .25rem !default;
-$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-padding-y-sm:      .5rem !default;
+$input-btn-padding-x-sm:      .75rem !default;
 $input-btn-font-size-sm:      $font-size-sm !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
-$input-btn-padding-y-lg:      .5rem !default;
-$input-btn-padding-x-lg:      1rem !default;
+$input-btn-padding-y-lg:      .75rem !default;
+$input-btn-padding-x-lg:      1.25rem !default;
 $input-btn-font-size-lg:      $font-size-lg !default;
 $input-btn-line-height-lg:    $line-height-lg !default;
 
