@@ -2,7 +2,7 @@
     "courses":[
         {
             "title":"C++與演算法",
-            "iconCLASS":"mdi mdi-iframe-outline icon text-center text-info",
+            "iconCLASS":"mdi mdi-iframe-outline icon text-center",
             "time":"每週一下午6:00~7:00",
             "img":"https://i.imgur.com/gp3pQz3.png",
             "colorCLASS":"text-info",
@@ -11,7 +11,7 @@
         },
         {
             "title":"frontend develop",
-            "iconCLASS":"mdi mdi-web icon text-center text-warning",
+            "iconCLASS":"mdi mdi-web icon text-center",
             "time":"每週二下午6:00~7:00",
             "colorCLASS":"text-success",
             "img":"https://uploads.toptal.io/blog/image/125783/toptal-blog-image-1522333595770-14ba14a2f6099482fa9189f8764dd5ad.png",
@@ -20,7 +20,7 @@
         },
         {
             "title":"Machine Learning",
-            "iconCLASS":"mdi mdi-cube-outline icon text-center text-danger",
+            "iconCLASS":"mdi mdi-cube-outline icon text-center",
             "time":"每週三下午6:00~7:00",
             "colorCLASS":"text-danger",
             "img":"https://live.staticflickr.com/1834/42271822770_6d2a1d533f_b.jpg",
@@ -29,7 +29,7 @@
         },
         {
             "title":"硬體",
-            "iconCLASS":"mdi mdi-memory icon text-center text-warning",
+            "iconCLASS":"mdi mdi-memory icon text-center",
             "time":"每週四下午6:00~7:00",
             "colorCLASS":"text-success",
             "img":"https://farm2.static.flickr.com/1943/31653058398_9de9800cc5.jpg",
@@ -38,7 +38,7 @@
         },
         {
             "title":"Python",
-            "iconCLASS":"mdi mdi-file-document-box-outline icon text-center text-danger",
+            "iconCLASS":"mdi mdi-file-document-box-outline icon text-center",
             "time":"每週五下午6:00~7:00",
             "colorCLASS":"text-danger",
             "img":"https://www.python.org/static/img/python-logo@2x.png",
@@ -48,7 +48,7 @@
         },
         {
             "title":"四校聯課",
-            "iconCLASS":"mdi mdi-flag-outline icon text-center text-info",
+            "iconCLASS":"mdi mdi-flag-outline icon text-center",
             "time":"11/2、11/3、11/9、11/10",
             "colorCLASS":"text-info",
             "img":"assets/image/academy.jpg",
