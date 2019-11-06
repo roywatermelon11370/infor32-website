@@ -119,11 +119,59 @@ a:hover {
     background: black;
     opacity: 0.5;
     z-index: 1;
+    animation: headermask 2.5s;
 }
+@keyframes headermask {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
 
 .title {
     letter-spacing: 10px;
     font-weight: 500;
+    animation: title 1s ;
+}
+@keyframes title {
+    from {
+        letter-spacing: 0px;
+        opacity: 0;
+    }
+
+    30% {
+        letter-spacing: 30px;
+        opacity: 0.5;
+    }
+
+    to {
+        letter-spacing: 10px;
+    }
+}
+
+
+.subtitle {
+    animation: subtitle 1.5s;
+}
+@keyframes subtitle {
+    from {
+        margin-top: -50px;
+        opacity: 0;
+    }
+
+    50% {
+        margin-top: -50px;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
 }
 
 .title:before {
@@ -281,7 +329,9 @@ a:hover {
     display: flex;
     position: relative;
     overflow: hidden;
-    transition: all 0.3s ease-in-out;}
+    transition: all 0.3s ease-in-out;
+    animation: card 0.5s ease;
+    }
     .lesson-card:hover {
         background: rgba(53, 74, 95, 1);
         transform: scale(1.02);
@@ -299,6 +349,17 @@ a:hover {
         width: 95%;
     }
 } 
+
+@keyframes card {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
 
 .lesson-card-text {
     position: relative;
